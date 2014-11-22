@@ -1,0 +1,50 @@
+﻿@model WH103.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Customer</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BillingAddress)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BillingAddress)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BillingCity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BillingCity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BillingState)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BillingState)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BillingZip)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BillingZip)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
