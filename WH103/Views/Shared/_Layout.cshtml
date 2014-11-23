@@ -8,20 +8,24 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/dataTables")
     @Scripts.Render("~/bundles/modernizr")
-    
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="">
-        <ul class="">
-            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-            <li>@Html.ActionLink("Customer", "Index", "Customer")</li>
-           
-        </ul>
+
+    <div id="wrapper">
+        <div id="info-bar">
+            <div class="container clearfix">
+               @Html.ActionLink("Home", "Index", "Home")
+               @Html.ActionLink("Customers", "Index", "Customer")
+            </div>
+        </div>
     </div>
 
-    @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+            @RenderBody()
+
+            @Scripts.Render("~/bundles/jquery")
+            @RenderSection("scripts", required: false)
 </body>
 </html>

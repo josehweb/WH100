@@ -311,6 +311,7 @@
     <Content Include="Scripts\DataTables-1.10.3\dataTables.tableTools.min.js" />
     <Content Include="Scripts\DataTables-1.10.3\jquery.dataTables.js" />
     <Content Include="Scripts\DataTables-1.10.3\jquery.dataTables.min.js" />
+    <None Include="Properties\PublishProfiles\WH.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
